@@ -1,0 +1,71 @@
+body {
+  background-color: inherit;
+}
+.navigation{
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+  color: white
+
+}
+.mylist{
+  text-decoration: none;
+  list-style: none;
+  padding:  20px 20px 20px 20px;
+}
+.mylist > li{
+  display:inline-block;
+  padding:  20px 20px 20px 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: blue;
+}
+.mainheader{
+  text-align: center;
+}
+.pict{
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  justify-content: center;
+  width: 200;
+  height:400;
+}
+.foot {
+left: 10px;
+bottom: 0;
+right: 10px;
+width: 100%;
+/*background-color: gray;*/
+color: black;
+text-align: center;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.loginpage{
+  background-image: url(Picture5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.signup{
+}
+.art {
+  width: 700px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 10px;
+  display: block;
+  /*text-align: center;*/
+}
+.div{
+  display: flex;
+  justify-content: center;
+/*  margin-left: auto;
+  margin-right: auto;*/
+}

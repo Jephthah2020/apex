@@ -1,0 +1,619 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+ MathJax = {
+   tex: {
+     tags: 'ams'  // should be 'ams', 'none', or 'all'
+   }
+ };
+ </script>
+ <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title></title>
+  </head>
+  <body class ="">
+     <p ><h3 style="text-align:center"><u>COMPLEX NUMBERS</u></h3></p><br><br>
+     <div class="center">
+       <p>
+         A number of the form <br>
+         \( z = a+ib \) <br>
+          where \( a \) and \( b \) are real numbers is called a <b>complex number</b>.<br><br>
+         The set of complex numbers is denoted by \( \mathbb{C}  \).<br><br>
+         \(  \mathbb{C} = \left\{ z = a+ib \ni a,b \in \mathbb{R} , i=\sqrt{-1} \right\} \)<br><br>
+         Note :<br>
+         \(\displaystyle{ i^2=-1} \)<br>
+        \( \displaystyle{ i^3={-1(i)}= -i} \)<br>
+        \( \displaystyle{i^4=i^2+i^2={-1 \cdot -1}=1} \)<br>
+        \( \displaystyle{i^5=i \cdot i^4=i \cdot 1 = i} \) <br>
+       </p>
+       <br>
+       <p>
+         Suppose \( \displaystyle{z=a+ib} \) where \( x \),\( y \in \mathbb{R}\), then<br>
+         We call \( x \) the real part of \( z \), we write \( x=Re(z) \)<br>
+         We call \( y \) the imaginary part of \( z \), we write \( y=Im(z) \)<br><br>
+         <u>Conjugate Of A Complex Number</u><br><br>
+         Let \( z \in \mathbb{C} \) , \( z=a+ib  \)<br>
+         The conjugate of \( z \) is denoted by \( \bar{z} \)<br>
+         \( \bar{z} = a-ib \)<br><br>
+         <b>NOTE:</b> We say that \( z \in \mathbb{C} \) is real if \( Im{(z)}=0 \).<br>
+         We say that \( z \in \mathbb{C} \) is imaginary if \( Re{(z)}=0 \).<br>
+       </p>
+       <br>
+       <p>
+         <h4><u>Argand Diagram</u></h4><br><br>
+         A complex number of the form \( z=x+iy \) is specified by the two real numbers \(x \) and \( y \).<br>
+         To represent a complex number, we find a point in the plane whose cartesian coordinates are the numbers \( x \) and \( y \), as shown below <br><br>
+         <img src="ArgandDiagram.jpg" height="200px" alt=""> <br><br>
+         The diagram is called <i><b>Argand Diagram</b></i>. The \( x-axis \) represents the real part <br>
+         while the \( y-axis \) represents the imaginary part. <br>
+         By Pythagoras theorem, we have that <br><br>
+         \( \displaystyle{ {|OP|} = \sqrt{x^2+y^2}} \)<br><br>
+         Hence, the <u><b> Modulus </b></u> (or absolute value) of a complex number \( z \) is given by <br><br>
+         \( |z| = |x+iy| = \sqrt{x^2+y^2} \ge 0\) <br><br>
+         <u><b>Polar Form Of Complex Numbers</b></u><br><br>
+         From the diagram above, we have that <br><br>
+         \( x=r\cos{\theta} \), \(  y = r\sin{\theta}\), then <br>
+         \( \displaystyle{x^2+y^2={(r\cos{\theta})^2+(r\sin{\theta})^2}} =  {(r^2\cos^2{\theta})+(r^2\sin^2{\theta})} \)<br><br>
+         \( \displaystyle{= r^2(\cos^2{\theta}+\sin^2{\theta}) = {r^2(1) = r^2}} \)<br><br>
+         \( \displaystyle{ \therefore  x^2+y^2=r^2} \)<br><br>
+         So, we have <br>
+         \( z= x+iy \implies z= r\cos{\theta}+ir\sin{\theta} \)<br><br>
+         \( \implies { z=r( \cos{\theta}+i \sin{\theta})} \) <br><br>
+         The angle \( \theta \) is called the <b><i>argument</i></b> of \( z \).<br>
+         We write <br>
+         \( \tan{\theta} = arg(z) = \frac{y}{x} \)<br><br>
+         \( \theta \) will have infinite number of values differing by multiples of \( 2 \pi \). <br>
+         Hence, the values of \( \theta \) lying in the range \( \pi < \theta \le \pi \) is called <br>
+         the <i><b> principal value of the argument</b></i>. This is denoted by \( Arg(z) \)<br><br>
+         <u><b>Exponential function of complex variables</b></u><br><br>
+         Let \( z \) be a complex number <br><br>
+         \( z = r(\cos{\theta}+i \sin{\theta}) \)<br><br>
+         We know that <br><br>
+         \( \displaystyle{\cos{\theta} = \frac{e^{i \theta}+ e^{-i\theta}}{2}} \)<br><br>
+         \( \displaystyle{\sin{\theta} = \frac{e^{i \theta} - e^{-i\theta}}{2i}} \)<br><br>
+         Now <br><br>
+         \( \displaystyle{\cos{\theta}+ i \sin{\theta} = {\frac{e^{i \theta}+ e^{-i\theta}}{2}}+i{\frac{e^{i \theta} - e^{-i\theta}}{2i}}} \)<br><br>
+         \( \displaystyle{ \implies {\frac{e^{i \theta}+ e^{-i\theta}}{2}}+{\frac{e^{i \theta} - e^{-i\theta}}{2i}}}  \)<br><br>
+         \( \displaystyle{ = {e^{i \theta}+e^{-i \theta}+e^{i\theta}-e^{-i \theta}} \over 2} \)<br><br>
+         \( \displaystyle{ = {\frac{2e^{i \theta}}{2}} = e^{i \theta}} \)<br><br>
+         \( \displaystyle{ \therefore  z = r( \cos{\theta}+i \sin{\theta}) \implies z ={re^{i \theta}}}\)<br><br>
+       </p>
+       <br>
+       <p>
+         <u><b>Properties Of Complex Numbers</b></u><br><br>
+         Let \( z_1 \),\( z_2 \) be complex numbers. The following holds : <br><br>
+         (i) \( \displaystyle{|z_1|=0 } \) <em><i> if and only if </i></em> \( z_1=0 \)<br><br>
+         (ii) \( \displaystyle{ |z_1z_2|=|z_1||z_2|} \)<br><br>
+         (iii) \( \displaystyle{\left| {1 \over {z_1}}\right| = {1 \over {|z_1|}} } \), if \( z_1 \ne 0 \)<br><br>
+         (iv) \( \displaystyle{|z_1+z_2| \le {|z_1|+|z_2|}} \)<br><br>
+         (v) \( \displaystyle{ arg(z_1z_2 ) =arg(z_1)+arg(z_2)} \)<br><br>
+         (vi) \( \displaystyle{ arg \left( \frac{z_1}{z_2} \right) = {arg(z_1)-arg(z_2)}} \)<br><br>
+         (vii) \( \displaystyle{ \left| \frac{z_1}{z_2} \right| = { \frac{|z_1|}{|z_2|}}} \)<br><br>
+       </p>
+       <p>
+        <h4><u>Rules for the manipulation of complex numbers</u></h4><br><br>
+        (i) \(  {a+ib} = {c+id} \) <br>
+        <em>iff</em> \( a=c \) and \( b=d \)<br><br>
+        (ii) \( \displaystyle{(a+ib)\pm (c+id) = (a+c)\pm i(b+d) } \)<br><br>
+        (iii) \( \displaystyle{(a+ib) \cdot (c+id) = (ac-bd)+i(ad+bc)} \)<br><br>
+        (iv) \( \displaystyle{ \frac{a+ib}{c+id} = {\frac{a+ib}{c+id} \cdot \frac{c-id}{c-id} = \frac{(ac+bd)+i(bc-ad)}{c^2+d^2}  } } \)<br><br>
+        where \( c-id \) is the conjugate of \( c+id  \)<br>
+       </p>
+       <br>
+       <p>
+         <h4><u>Examples</u></h4><br><br>
+         (1) Express the following in the form \( a+ib \) <br><br>
+         (a) \( \displaystyle{ i^3(1+i)+i^5(3-i)+i^7(2+i)} \)<br><br>
+         (b) \( \displaystyle{2i(1-3i)+ 3(4-i)}  \)  <br><br>
+         (c) \( \displaystyle{(3+i)(4-2i)} \) <br><br>
+         (d) \( \displaystyle{(6+2i)(1-3i)} \) <br><br>
+         (e) \( \displaystyle{\frac{2-5i}{7+3i}} \) <br><br>
+         (f) \( \displaystyle{\frac{1-5i}{3+2i}} \) <br>
+       </p>
+       <br>
+       <p>
+         <u>Solution</u><br><br>
+         (a) \(  i^3(1+i)+i^5(3-i)+i^7(2+i) \)<br><br>
+         \( \displaystyle{ \implies {(i \cdot i^2)(1+i)+(i \cdot i^2 \cdot i^2)(3-i)+(i \cdot i^2 \cdot i^2 \cdot i^2)(2+i)}} \) <br><br>
+         \( \displaystyle{ = -i(1+i)+i(3-i)-i(2+i)} \) <br><br>
+         \( \displaystyle{-i+1+3i+1-2i+1 = 3} \) <br><br>
+         (b) \( \displaystyle{2i(1-3i)+3(4-i)} \) <br><br>
+         \( \displaystyle{= 2i-6 \cdot i^2+12-3i} \) <br><br>
+         \( \displaystyle{= 2i+6+12-3i} \) <br><br>
+         \( \displaystyle{= 18-i} \) <br><br>
+         (c) \( \displaystyle{(3+i)(4-2i)} \) <br><br>
+         \( \displaystyle{\implies 12-6i+4i-2 \cdot i^2} \) <br><br>
+         \( \displaystyle{= 12-2i+2 = 14-2i}  \) <br><br>
+         (d) \( \displaystyle{(6+2i)(1-3i)} \) <br><br>
+         \( \displaystyle{ \implies 6-18i+2i-6 \cdot i^2} \)<br><br>
+         \( \displaystyle{= 6-16i+6 = 12-16i} \)<br><br>
+         (e) \( \displaystyle{\frac{2-5i}{7+3i}} \) <br><br>
+         \( \displaystyle{\implies \frac{2-5i}{7+3i} \cdot \frac{7-3i}{7-3i} } \)<br><br>
+         \( \displaystyle{ = \frac{14-6i-35i+15 \cdot i^2}{49+9}} \)<br><br>
+         \( \displaystyle{= \frac{14-41i-15}{58} = \frac{-(1+41i)}{58}} \)<br><br>
+         (f) \( \displaystyle{\frac{1-5i}{3+2i} } \)<br><br>
+         \( \displaystyle{\implies \frac{1-5i}{3+2i} \cdot \frac{3-2i}{3-2i} } \)<br><br>
+         \( \displaystyle{ = \frac{3-2i-15i-10}{9+4}= \frac{-(7+17i)}{13}} \)<br><br>
+       </p>
+       <br>
+       <p>
+         (2) Find the solutions of the equation <br>
+         \( \displaystyle{ x^2+6x+18=0 } \)<br><br>
+         in the form \( \displaystyle{a+ib } \). verify their correctness by substitution into the equation.<br><br>
+         <u>Solution</u><br><br>
+         \( \displaystyle{ x^2+6x+18=0 } \)<br><br>
+         Using the quadratic formula <br>
+         \(  \displaystyle{x= \frac{-b \pm \sqrt{b^2-4ac}}{2a}} \)<br><br>
+         We have <br>
+         \(  \displaystyle{x= \frac{-6 \pm \sqrt{6^2-4 \cdot 1 \cdot 18}}{2 \cdot 1}} \)<br><br>
+         \( \displaystyle{=  \frac{-6 \pm \sqrt{36-72}}{2} = \frac{-6 \pm \sqrt{-36}}{2}} \)<br><br>
+         \(  \displaystyle{=  \frac{-6 \pm i \sqrt{36}}{2} = {\frac{-6 \pm 6i}{2}} = {-3 \pm 3i}} \)<br><br>
+         \( \displaystyle{\therefore x={-3+3i}}  \) or \( \displaystyle{x={-3-3i}} \)<br><br>
+         To verify <br>
+         When \( x={-3+3i}  \)<br>
+         \( \displaystyle{x^2+6x+18 \implies {(-3+3i)^2+6(-3+3i)+18}} \)<br><br>
+         \( \displaystyle{\implies 9-18i-9-18+18i+18 = 0} \)<br><br>
+         When \( \displaystyle{x={-3-3i}} \)<br><br>
+         \( \displaystyle{x^2+6x+18 \implies {(-3-3i)^2+6(-3-3i)+18}} \)<br><br>
+         \( \displaystyle{ \implies {9+18i-9-18-18i+18} = 0} \)<br><br>
+       </p>
+       <br>
+       <p>
+         (3) Let \( z_1, z_2 \in \mathbb{C} \) .Prove that <br><br>
+         (i) \( \displaystyle{ |z_1z_2|=|z_1||z_2|} \)<br><br>
+         (ii) \( \displaystyle{ arg(z_1z_2 ) =arg(z_1)+arg(z_2)} \)<br><br>
+         (iii) \( \displaystyle{ \left| \frac{z_1}{z_2} \right| = { \frac{|z_1|}{|z_2|}}} \)<br><br>
+         (iv) \( \displaystyle{ arg \left( \frac{z_1}{z_2} \right) = {arg(z_1)-arg(z_2)}} \)<br><br>
+         (v) \( \displaystyle{\left| {1 \over {z}}\right| = {1 \over {|z|}} } \), if \( z \ne 0 \)<br><br>
+         <u><b>Solution</b></u><br><br>
+         (i) \( \displaystyle{ |z_1z_2|=|z_1||z_2|} \)<br><br>
+          Let \( \displaystyle{ z_1=r_1( \cos{{\theta}_1}+i \sin{{\theta}_1})} \) and <br>
+           let \( \displaystyle{ z_2=r_2( \cos{{\theta}_2}+i \sin{{\theta}_2})} \) <br><br>
+           Then \( \displaystyle{ |z_1|=r_1} \) and \( \displaystyle{ |z_2|=r_2} \)<br><br>
+           Also, \( \displaystyle{ arg(z_1)= {\theta}_1} \) and  \( \displaystyle{ arg(z_2)= {\theta}_2} \) <br><br>
+          Now <br><br>
+          \( \displaystyle{ z_1z_2={r_1( \cos{{\theta}_1}+i \sin{{\theta}_1}) \cdot r_2( \cos{{\theta}_2}+i \sin{{\theta}_2})}} \)<br><br>
+          \( \displaystyle{ \implies r_1r_2{[{( \cos{{\theta}_1}+i \sin{{\theta}_1}) \cdot ( \cos{{\theta}_2}+i \sin{{\theta}_2})}]}} \)<br><br>
+          \(  \displaystyle{ \implies r_1r_2{[(\cos{{\theta}_1} \cos{{\theta}_2}- \sin{{\theta}_1} \sin{{\theta}_2})+i( \sin{{\theta}_1} \cos{{\theta}_2}+ \cos{{\theta}_1} \sin{{\theta}_2})]}} \)<br><br>
+          \(  \displaystyle{ \implies {r_1r_2{[ \cos{({\theta}_1+{\theta}_2)}+i \sin{({\theta}_1+{\theta}_2)}]}}} \)<br><br>
+          \( \displaystyle{z_1z_2 = {r_1r_2{[ \cos{({\theta}_1+{\theta}_2)}+i \sin{({\theta}_1+{\theta}_2)}]}}} \)<br><br>
+          Hence <br><br>
+          \( \displaystyle{ |z_1z_2|= r_1r_2 = |z_1||z_2|} \)<br><br>
+            \( \implies \displaystyle{ |z_1z_2|=|z_1||z_2|} \)<br><br>
+            (ii) \( \displaystyle{ arg(z_1z_2 ) =arg(z_1)+arg(z_2)} \)<br><br>
+             It follows from (i) above that <br><br>
+             \( \displaystyle{z_1z_2= {r_1r_2{[ \cos{({\theta}_1+{\theta}_2)}+i \sin{({\theta}_1+{\theta}_2)}]}}} \)<br><br>
+             Then <br><br>
+             \( \displaystyle{ \implies arg(z_1z_2) = { {\theta}_1+{\theta_2}} = arg(z_1)+arg(z_2)} \)<br><br>
+             (iii) \( \displaystyle{ \left| \frac{z_1}{z_2} \right| = { \frac{|z_1|}{|z_2|}}} \)<br><br>
+             Let \( \displaystyle{ z_1=r_1( \cos{{\theta}_1}+i \sin{{\theta}_1})} \) and <br>
+              let \( \displaystyle{ z_2=r_2( \cos{{\theta}_2}+i \sin{{\theta}_2})} \) <br><br>
+              Then \( \displaystyle{ |z_1|=r_1} \) and \( \displaystyle{ |z_2|=r_2} \)<br><br>
+              Also, \( \displaystyle{ arg(z_1)= {\theta}_1} \) and  \( \displaystyle{ arg(z_2)= {\theta}_2} \) <br><br>
+             Now <br><br>
+             \( \displaystyle{ \frac{z_1}{z_2} = \frac{r_1( \cos{{\theta}_1}+i \sin{{\theta}_1})}{r_2( \cos{{\theta}_2}+i \sin{{\theta}_2})}} \)<br><br>
+             \( \displaystyle{ \implies {\frac{r_1( \cos{{\theta}_1}+i \sin{{\theta}_1})}{r_2( \cos{{\theta}_2}+i \sin{{\theta}_2})}} \cdot {\frac{r_2( \cos{{\theta}_2}-i \sin{{\theta}_2})}{r_2( \cos{{\theta}_2}-i \sin{{\theta}_2})}}} \)<br><br>
+             \( \displaystyle{\implies { \frac{r_1r_2[{( \cos{{\theta}_1 \cos{{\theta}_2}}+ \sin{{\theta}_1} \sin{{\theta}_2})+i( \sin{{\theta}_1} \cos{{\theta}_2}- \cos{{\theta}_1} \sin{{\theta}_2})}]}{{r_2}^2( \cos^2{{\theta}_2}+ \sin^2{{\theta}_2})}} }\)<br><br>
+             \( \displaystyle{ \implies \frac{r_1[ \cos{( {\theta}_1-{\theta}_2)}+i \sin{({\theta}_1-{\theta}_2)}]}{r_2(1)}} \)<br><br>
+             \( \displaystyle{ \implies \frac{z_1}{z_2} =  \frac{r_1}{r_2}[ \cos{( {\theta}_1-{\theta}_2)}+i \sin{({\theta}_1-{\theta}_2)}]} \)<br><br>
+             \( \displaystyle{ \left| \frac{z_1}{z_2} \right| = \frac{r_1}{r_2} = { \frac{|z_1|}{|z_2|}}} \)<br><br>
+             \( \displaystyle{ \therefore \left| \frac{z_1}{z_2} \right| = { \frac{|z_1|}{|z_2|}}} \)<br><br>
+             (iv) \( \displaystyle{ arg \left( \frac{z_1}{z_2} \right) = {arg(z_1)-arg(z_2)}} \)<br><br>
+             From (iii) above, we have that <br><br>
+             \( \displaystyle{\frac{z_1}{z_2} =  \frac{r_1}{r_2}[ \cos{( {\theta}_1-{\theta}_2)}+i \sin{({\theta}_1-{\theta}_2)}]} \)<br><br>
+             So <br><br>
+             \( \displaystyle{ arg(\frac{z_1}{z_2})  = {{\theta}_1-{\theta}_2} = arg(z_1)-arg(z_2)} \)<br><br>
+             \( \displaystyle{ \implies arg \left( \frac{z_1}{z_2} \right) = {arg(z_1)-arg(z_2)}} \)<br><br>
+            (v) \( \displaystyle{\left| {1 \over {z}}\right| = {1 \over {|z|}} } \), if \( z \ne 0 \)<br><br>
+            Let \(z=r( \cos{{\theta}}+i \sin{{\theta}}) \)<br><br>
+            So, we have <br><br>
+            \( |z|=r \)<br><br>
+            Now <br><br>
+            \( \displaystyle{\frac{1}{z} \implies \frac{1}{r( \cos{{\theta}}+i\sin{{\theta}})} } \)<br><br>
+            \( \displaystyle{ \implies {\frac{1}{r( \cos{{\theta}}+i\sin{{\theta}})}} \cdot {\frac{r( \cos{{\theta}}-i\sin{{\theta}})}{r( \cos{{\theta}}-i\sin{{\theta}})}} } \)<br><br>
+            \( \displaystyle{\implies \frac{r( \cos{{\theta}}-i\sin{{\theta}})}{{r}^2( \cos^2{{\theta}}+ \sin^2{{\theta}})}} \)<br><br>
+            \( \displaystyle{\implies \frac{( \cos{{\theta}}-i\sin{{\theta}})}{r(1)} = {\frac{1}{r} {( \cos{{\theta}}-i \sin{{\theta}})}}}  \)<br><br>
+            \( \displaystyle{ \implies \left| {1 \over {z}}\right| = {\frac{1}{r}}= \frac{1}{|z|} } \)<br><br>
+       </p>
+       <p  flushleft>
+         (4)Find real numbers \( x \) and \( y \) such that <br>
+         \( \displaystyle{(x+iy)^2=40+42i} \)<br><br>
+         Hence, evaluate \( \displaystyle{ \sqrt{40+42i}} \)<br><br>
+         <u>Solution</u><br><br>
+        \( \displaystyle{(x+iy)^2=40+42i} \)<br><br>
+        \( \displaystyle{ \implies {(x^2-y^2)+i(2xy)} = 40+42i} \)<br><br>
+        Comparing both sides <br>
+        \( x^2-y^2 =40  \) \(\tag{1}\)<br>
+        \( 2xy = 42  \)\( \tag{2}\)<br>
+        from \( (2) \)<br>
+         \( \displaystyle{x= \frac{21}{y} }\) \( \tag{3} \)<br>
+        Substituting \( (3) \) into \( (1) \) <br><br>
+        \(  \displaystyle{(\frac{21}{y})^2-y^2=40 } \)<br><br>
+        \( \displaystyle{\implies \frac{441}{y^2} -y^2=40}\)<br><br>
+        \( \displaystyle{\implies 441-y^4=40y^2} \)<br><br>
+        \( \displaystyle{y^4+40y^2-441=0} \)<br><br>
+        \( \displaystyle{y^4-9y^2+49y^2-441=0} \)<br><br>
+        \( \displaystyle{\implies {y^2(y^2-9)+49(y^2-9)}=0} \)<br><br>
+        \( \displaystyle{\implies (y^2-9)(y^2+49)= 0} \) <br><br>
+        \( \displaystyle{{y^2-9=0} }\) or \( \displaystyle{ {y^2+49=0} }\) <br><br>
+        We take \( \displaystyle{{y^2-9=0} }\)<br><br>
+        \( \displaystyle{{y^2=9} }\)<br><br>
+        \( \displaystyle{{y= \pm \sqrt{9}}} \)<br>
+        \(  \displaystyle{y= \pm 3}\)<br><br>
+        When \( \displaystyle{y=  +3}\)<br><br>
+        \( \displaystyle{x=  \frac{21}{3} = 7}\)<br><br>
+        When \( \displaystyle{y=  -3}\)<br><br>
+        \( \displaystyle{x=  -{\frac{21}{3}} = -7}\)<br><br>
+        \( \displaystyle{\therefore x= \pm 7, y= \pm 3} \)<br><br>
+        \( \displaystyle{\therefore x+iy = \pm (7+3i)} \)<br><br>
+        Now <br><br>
+        To find \( \displaystyle{ \sqrt{40+42i}} \)<br><br>
+        Let \( \displaystyle{x+iy = \sqrt{40+42i}} \)<br><br>
+        Squaring both sides <br><br>
+        \( \displaystyle{(x+iy)^2=40+42i} \)<br><br>
+        Hence <br><br><br>
+        \( \displaystyle{ \sqrt{40+42i} = \pm (7+3i)} \)<br><br>
+        (5) Let \( \displaystyle{z,w \in \mathbb{C}} \). Show that<br><br>
+        (a) \( \displaystyle{\overline{{z \pm w}} = \bar{z} \pm \overline{w}} \)<br><br>
+        (b) \( \displaystyle{\overline{zw} = \bar{z} \bar{w}} \)<br><br>
+        (c) \( \displaystyle{\overline{({1 \over z})}= {\frac{1}{\bar{z}}}, z \ne 0} \)<br><br>
+        (d) \( \displaystyle{z+ \bar{z} = 2Re(z)} \)<br><br>
+        (e) \( \displaystyle{z- \bar{z} = 2iIm(z)} \)<br><br>
+        (f) \( \displaystyle{ Re(z \pm w) = Re(z) \pm Re(w)} \)<br><br>
+        (g)\( \displaystyle{ Im(z \pm w) = Im(z) \pm Re(w)} \)<br><br>
+        <u><b>Solution</b></u><br><br>
+        Let \( \displaystyle{z =a+ib , w =c+id} \)<br><br>
+        Then <br>
+        \( \displaystyle{ \bar{z}=a-ib , \overline{w} = c-id} \)<br><br>
+        \( \displaystyle{Re(z)=a , Im(z) = b, Re(w) =c ,Im(w)=d} \)<br><br>
+        (a) \( \displaystyle{\overline{{z \pm w}} = {\overline{(a+ib)\pm (c+id)}}={\overline{(a \pm c)+i(b \pm d)}}} \)<br><br>
+        \( \displaystyle{\implies (a \pm c)-i(b \pm d) = (a-ib) \pm i(c-id) = {\overline{z} \pm \overline{w}}} \)<br><br>
+        \( \displaystyle{ \implies \overline{{z \pm w}} = \bar{z} \pm \overline{w}} \)<br><br>
+        (b) \( \displaystyle{\overline{zw} = {\overline{(a+ib)(c+id)}}} \)<br><br>
+        \( \displaystyle{\implies {\overline{(ac-bd)+i(ad+bc)}} }\)<br><br>
+        \( \displaystyle{= {(ac-bd)-i(ad+bc)} = {ac-ibc-iad-bd}} \)<br><br>
+        \( \displaystyle{= c(a-ib)-id(a-ib)} \) (Since \( i^2=-1\) , \( {-id \cdot -ib} = -bd \) )<br><br>
+        \( \displaystyle{= (a-ib)(c-id)} \) <br><br>
+        \( \displaystyle{= {\bar{z}} {\bar{w}}} \)<br><br>
+        \( \displaystyle{\implies \overline{zw} = \bar{z} \bar{w}} \)<br><br>
+        (c) \( \displaystyle{\overline{({1 \over z})} } \)<br><br>
+        now <br><br>
+        \( \displaystyle{\frac{1}{z} = \frac{1}{a+ib} = {{\frac{1}{a+ib}} \cdot {\frac{a-ib}{a-ib}}}} \) <br><br>
+        \( \displaystyle{ \implies \frac{1}{z}= \frac{a-ib}{a^2+b^2} = {\frac{1}{a^2+b^2}}{[a-ib]}} \)<br><br>
+        \( \displaystyle{ \therefore \overline{({1 \over z})}= {\frac{1}{a^2+b^2}}{[a+ib]} }\)<br><br>
+        Also <br><br>
+        \( \displaystyle{{\frac{1}{\bar{z}}}= {\frac{1}{a-ib}} = {{\frac{1}{a-ib}} \cdot {\frac{a+ib}{a+ib}}}} \)<br><br>
+        \( \displaystyle{ = \frac{a+ib}{a^2+b^2} = \frac{1}{a^2+b^2}{[a+ib]}} \)<br><br>
+        \( \displaystyle{\implies {\frac{1}{\bar{z}}} = {\frac{1}{a^2+b^2}{[a+ib]}} ={\overline{({1 \over z})}} } \)<br><br>
+        (d) \(\displaystyle{z+ \bar{z} = (a+ib)+(a-ib) } \)<br><br>
+        \( \displaystyle{ =2a = 2Re(z)}\)<br><br>
+        (e) \(\displaystyle{z- \bar{z} = (a+ib)-(a-ib) } \)<br><br>
+        \( \displaystyle{ =2bi = 2iIm(z)}\)<br><br>
+        (f) \( \displaystyle{z \pm w = (a+ib) \pm (c+id)=(a\pm c)+1(b\pm d)}\)<br><br>
+        \( \therefore Re(z \pm w) = a \pm c = Re(z) \pm Re(w) \)<br><br>
+        (g) It follows from (f) above that <br><br>
+        \(  Im(z \pm w) = b \pm d = Im(z) \pm Im(w) \)<br><br>
+       </p>
+       <br>
+       <p>
+         (6) Express <br><br>
+         \( \displaystyle{5e^{\frac{3 \pi}{4}i}+ 2e^{- \frac{ \pi}{6}i}} \)<br>
+         in the form \( x+iy , x,y\in \mathbb{R} \)<br><br>
+         <u>Solution</u><br><br>
+         Let \( \displaystyle{ z = 5e^{\frac{3 \pi}{4}i} } \) and \( \displaystyle{ w =2e^{- \frac{ \pi}{6}i} } \)<br><br>
+         Now, for \( \displaystyle{ z =5e^{\frac{3 \pi}{4}i} } \)<br><br>
+         Comparing with \( \displaystyle{z=re^{i \theta}} \)<br><br>
+         We have <br><br>
+         \( r =5 \) and \( \theta = \frac{3 \pi}{4} \)<br><br>
+         \( \displaystyle{\cos{\theta} = \cos{(\frac{3 \pi}{4})} = \cos{135} = - \frac{\sqrt{2}}{2}} \)<br><br>
+         \( \displaystyle{\sin{\theta} = \sin{(\frac{3 \pi}{4})} = \sin{135} =  \frac{\sqrt{2}}{2}} \)<br><br>
+         \( \displaystyle{z={x+iy}={(r\cos{\theta})+i(r\sin{\theta})} = {-5(\frac{\sqrt{2}}{2})+5i(\frac{\sqrt{2}}{2})}} \)<br><br>
+         Also <br><br>
+         \( \displaystyle{ w =2e^{\frac{- \pi}{6}i} } \)<br><br>
+         Comparing with \( \displaystyle{w=re^{i \theta}} \)<br><br>
+         We have <br><br>
+         \( r =2 \) and \( \displaystyle{\theta = -{\frac{\pi}{6}} }\)<br><br>
+         \( \displaystyle{\cos{\theta} = \cos{( -{\frac{\pi}{6}})}= \cos{(-30)}=\cos{30} = \frac{\sqrt{3}}{2}} \)<br><br>
+         \( \displaystyle{\sin{\theta} = \sin{( -{\frac{\pi}{6}})}= \sin{(-30)}={- \sin{30}} = {- \frac{1}{2}}} \)<br><br>
+         \( \displaystyle{w={x+iy}={(r\cos{\theta})+i(r\sin{\theta})} = {2(\frac{\sqrt{3}}{2})-2i(\frac{1}{2})}} \)<br><br>
+         \(\displaystyle{ = \sqrt{3}-i} \)<br><br>
+         So, we have <br><br>
+         \( \displaystyle{5e^{\frac{3 \pi}{4}i}+ 2e^{- \frac{ \pi}{6}i} = z+w = {-5(\frac{\sqrt{2}}{2})}+{5i(\frac{\sqrt{2}}{2})}+{\sqrt{3}-i}  } \)<br><br>
+         \( \displaystyle{= \frac{-5 \sqrt{2} +2\sqrt{3}}{2}+i \frac{5 \sqrt{2}-2}{2}} \)<br><br>
+       </p>
+       <br>
+       <p>
+         (7) Express <br><br>
+         \( \displaystyle{\frac{(1-i)^{23}}{(\sqrt{3}-1)^{13}}}\)<br><br>
+         in the form \( \displaystyle{ re^{i \theta}, r>0, - \pi < \theta \le \pi} \)<br><br>
+         <u>Solution</u><br><br>
+         Let \( \displaystyle{ z= 1-i, w= \sqrt{3}-i} \)<br><br>
+         Then, for \( \displaystyle{z=1-i} \)<br><br>
+         \( \displaystyle{|z|=r= \sqrt{x^2+y^2} = \sqrt{1+1} = \sqrt{2}} \)<br><br>
+         \( \displaystyle{arg(z) = \theta = \arctan{({y \over x})} = \arctan{(-1)}= { - \frac{\pi}{4}}} \)<br><br>
+         \( \displaystyle{\therefore z=re^{i \theta} = {\sqrt{2} e^{ {- \frac{\pi}{4}}i}}} \)<br><br>
+         for \( \displaystyle{w= \sqrt{3}-i} \)<br><br>
+         \( \displaystyle{|w|=r= \sqrt{x^2+y^2} = \sqrt{3+1} = \sqrt{4} = 2} \)<br><br>
+         \( \displaystyle{arg(w) = \theta = \arctan{({y \over x})} = \arctan{({{-1}\over {\sqrt{3}}})}= { - \frac{\pi}{6}}} \)<br><br>
+         \( \displaystyle{\therefore w=re^{i \theta} = {2 e^{ {- \frac{\pi}{6}}i}}} \)<br><br>
+         So, we have <br><br>
+         \( \displaystyle{\frac{(1-i)^{23}}{(\sqrt{3}-1)^{13}} = {{z^{23}} \over {w^{13}}} = {{({\sqrt{2} e^{ {- \frac{\pi}{4}}i}})^{23}} \over {(2 e^{ {- \frac{\pi}{6}}i})^{13}}} }\)<br><br>
+         \( \displaystyle{ \implies \frac{{2^{{23} \over 2}}e^{-{{23 \pi} \over 4}i}}{{2^{13}}e^{-{{13 \pi} \over 6}i}} }\)<br><br>
+         \( \displaystyle{ \implies { {2^{{\frac{23}{2}}-13}} \cdot {e^{{-{{23 \pi} \over 4}i}+{{{13 \pi} \over 6}i}}} }     } \)<br><br>
+         \( \displaystyle{\implies { {2^{- \frac{3}{2}}} {e^{- \frac{43 \pi}{12}i}}       }     } \)<br><br>
+         But from the condition given that \(  {- \pi < \theta \le \pi} \)<br><br>
+         We add multiples of \( 2 \pi \) to \( \theta \),  to make \( \theta > {- \pi} \) <br><br>
+         \( \displaystyle{ {4 \pi + {({-{\frac{43 \pi}{12}}})}} = {\frac{5 \pi}{12}} } \)<br><br>
+         So we have that <br><br>
+         \( \displaystyle{\frac{(1-i)^{23}}{(\sqrt{3}-1)^{13}} ={ {2^{- \frac{3}{2}}} {e^{\frac{5 \pi}{12}i}}       }  }\)<br><br>
+       </p>
+       <br>
+       <p>
+         (8) By writing \( \displaystyle{z=x+iy} \), find all solutions of <br><br>
+         \( \displaystyle{z^2= {-5+12i}} \)<br><br>
+         <u>Solution</u><br><br>
+         Let \( \displaystyle{z=x+iy} \), Then<br><br>
+         \( \displaystyle{z^2={(x+iy)^2} = {(x^2-y^2)+i(2xy)}} \)<br><br>
+         So, we have <br><br>
+         \( \displaystyle{{(x^2-y^2)+i(2xy)} = {-5+12i}} \)<br><br>
+         Comparing both sides <br><br>
+         \( \displaystyle{x^2-y^2 = -5} \) \( \tag{1}\)<br><br>
+         \( \displaystyle{2xy=12} \) \( \tag{2} \)<br><br>
+         From \( (2) \), we have that <br>
+         \( \displaystyle{x = {6\over y}} \)<br><br>
+         Substituting into \( (1) \) <br><br>
+         \( \displaystyle{({6 \over y})^2-y^2= -5} \)<br><br>
+         \( \displaystyle{\implies {\frac{36}{y^2}-y^2= -5}   } \)<br><br>
+         \( \displaystyle{\implies 36-y^4=-5y^2} \)<br><br>
+         \(\displaystyle{\implies y^4-5y^2-36 = 0} \)<br><br>
+         \( \displaystyle{ \implies {(y^2-9)(y^2+4)} = 0  } \)<br><br>
+         \( \displaystyle{ \implies {(y^2-9) = 0  }} \) or \( \displaystyle{  {(y^2+4)} = 0  } \)<br><br>
+         We choose <br>
+          \( \displaystyle{  y^2-9 = 0 \implies y^2=9 \implies y = \pm 3  } \)<br><br>
+         When \( y = 3 \) <br><br>
+         \( \displaystyle{x={6 \over 3} = 2} \)<br><br>
+         When \( y = -3 \) <br><br>
+         \( \displaystyle{x={6 \over {-3}} = -2} \)<br><br>
+         \( \therefore x= \pm 2, y = \pm 3 \)<br><br>
+       </p>
+        <br>
+        <p>
+          <h4><u>DE MOIVRE'S THEOREM</u></h4><br><br>
+          If there are \( n \) complex numbers <br>
+          \( \displaystyle{ z_1,z_2,z_3, \cdots , z_n} \)<br>
+          with moduli <br>
+          \( \displaystyle{ r_1,r_2,r_3, \cdots , r_n} \)<br>
+          and arguments <br>
+          \( \displaystyle{ {\theta}_1, {\theta}_2, {\theta}_3, \cdots , {\theta_n} } \)<br>
+          then, <br><br>
+          \( \displaystyle{{z_1 \cdot z_2 \cdot z_3 \cdots z_n } = {r_1 \cdots r_n}{[{\cos{({{\theta}_1+{\theta}_2+ \cdots {\theta}_n } )} + i \sin{({{\theta}_1+{\theta}_2+ \cdots {\theta}_n})} }]}  }  \)<br><br>
+          In particular, if <br>
+          \( \displaystyle{z_1=z_2=z_3= \cdots = z_n = z}  \), and<br>
+          \(  \displaystyle{r_1=r_2=r_3= \cdots= r_n = r} \)<br><br>
+          Then we have <br><br>
+          \( \displaystyle{z^n = {[{r^n (\cos{n \theta}+i \sin{n \theta})}]}}   \)<br><br>
+          That is <br><br>
+          \( \displaystyle{z^n = {[{r (\cos{ \theta}+i \sin{ \theta})}]^n}}   \)<br><br>
+          \( \displaystyle{ \implies z^n = {[{r^n (\cos{n \theta}+i \sin{n \theta})}]}}   \)<br><br>
+          Also <br><br>
+          \( \displaystyle{ |z^n| = |z|^n  } \)<br><br>
+          \( \displaystyle{arg(z^n) = {n[arg(z)]}}\)<br><br>
+          In particular, If \( r =1 \)<br><br>
+          \( \displaystyle{ {({\cos{\theta}+ i \sin{\theta}})^n} = {({\cos{n \theta}+i\sin{n \theta}})}  } \)<br><br>
+          <h4><u>Proof of DE MOIVRE'S THEOREM</u></h4><br><br>
+          Let \( \displaystyle{z_1 = {\cos{\theta}_1+i \sin{\theta}_1}} \)<br><br>
+           \( \displaystyle{z_2 = {\cos{\theta}_2+i \sin{\theta}_2}} \)<br><br>
+           \( \displaystyle{z_3 = {\cos{\theta}_3+i \sin{\theta}_3}} \)<br><br>
+           Assuming \( \displaystyle{r_1 =1, r_2 =1, r_3=1} \)<br><br>
+           Now, \( \displaystyle{ z_1 \cdot z_2 = {({\cos{{\theta}_1}+i \sin{{\theta}_1}})({\cos{{\theta}_2}+i \sin{{\theta}_2}})   }   }  \)<br><br>
+           \( \displaystyle{ \implies {({{\cos{{\theta}_1} \cos{{\theta}_2}} - {\sin{{\theta}_1} \sin{{\theta}_2}}})+i{({{\sin{{\theta}_1} \cos{{\theta}_2}}+{\cos{{\theta}_1} \sin{{\theta}_2}}})}    }    } \) <br><br>
+           \( \displaystyle{ \implies {\cos{({\theta}_1+{\theta}_2)}+i \sin{({\theta}_1+{\theta}_2)} }  } \) <br><br>
+           Now, if \( \displaystyle{ {\theta}_1 = {\theta}_2 = \theta}  \) and \( z_1 = z_2 = z , \) then <br><br>
+           \( \displaystyle{z \cdot z = z^2 = {\cos{({\theta}+{\theta})}+i \sin{({\theta}+{\theta})} }  } \)<br><br>
+           \(  \displaystyle{\implies { z^2 = {\cos{2 \theta}+i \sin{2 \theta}}  }    }  \)<br><br>
+           Therefore \( \displaystyle{ {({\cos{ \theta}+i \sin{ \theta}})^2} = {\cos{2 \theta}+i \sin{2 \theta}}   } \)<br><br>
+           Again <br><br>
+           \( \displaystyle{ z_1 \cdot z_2 \cdot z_3 = {({\cos{{\theta}_1}+i \sin{{\theta}_1}})({\cos{{\theta}_2}+i \sin{{\theta}_2}})({\cos{{\theta}_3}+i \sin{{\theta}_3}})   }   }  \)<br><br>
+           \( \displaystyle{ \implies { [{\cos{({\theta}_1+{\theta}_2)}+i \sin{({\theta}_1+{\theta}_2)} }] \cdot ({\cos{{\theta}_3}+i \sin{{\theta}_3}})  }  } \)<br><br>
+           \( \displaystyle{ \implies {[{\cos{({\theta}_1+{\theta}_2)} \cos{{\theta}_3}} - {\sin{({\theta}_1+{\theta}_2)} \sin{{\theta}_3}}]+i{[{\sin{({\theta}_1+{\theta}_2)} \cos{{\theta}_3}}+{\cos{({\theta}_1+{\theta}_2)} \sin{{\theta}_3}}]}    }    } \) <br><br>
+           \( \displaystyle{ \implies {\cos{({\theta}_1+{\theta}_2+{\theta}_3)}+i \sin{({\theta}_1+{\theta}_2+{\theta}_3)} }  } \) <br><br>
+           If  \( \displaystyle{ {\theta}_1 = {\theta}_2 ={\theta}_3 = \theta} \)  and  \( z_1 = z_2 = z_3 = z , \) then <br><br>
+           \( \displaystyle{z \cdot z \cdot z = z^3 = {\cos{({\theta}+{\theta}+{\theta})}+i \sin{({\theta}+{\theta}+{\theta})} }  } \)<br><br>
+           \(  \displaystyle{\implies { z^3 = {\cos{3 \theta}+i \sin{3 \theta}}  }    }  \)<br><br>
+           Therefore \( \displaystyle{ {({\cos{ \theta}+i \sin{ \theta}})^3} = {\cos{3 \theta}+i \sin{3 \theta}}   } \)<br><br>
+           In general <br><br>
+           \( \displaystyle{ {({\cos{ \theta}+i \sin{ \theta}})^n} = {\cos{(n \theta )}+i \sin{(n \theta )}}   } \)<br><br>
+           <b><u>EXAMPLES</u></b><br><br>
+           (1) Express \( \cos{4 \theta} \) and  \( \sin{4 \theta}  \) in terms of powers of \( \cos{\theta} \)  and  \( \sin{\theta} \) respectively<br><br>
+           <u>Solution</u><br><br>
+           By De Moivre's theorem <br><br>
+           \( \displaystyle{ \cos{4 \theta}+i \sin{4 \theta} = {(\cos{\theta}+i \sin{\theta})^4}  } \)<br><br>
+           \( \displaystyle{\implies {\cos^4{\theta}+ 4 \cos^3{\theta}(i \sin{\theta})+6 \cos^2{\theta}(i \sin{\theta})^2 + 4 \cos{\theta}(i\sin{\theta})^3+(i \sin{\theta})^4}    } \)<br><br>
+           \( \displaystyle{ \implies{\cos^4{\theta}+4i \cos^3{\theta} \sin{\theta} - 6 \cos^2{\theta} \sin^2{\theta}- 4i \cos{\theta} \sin^3{\theta}+ \sin^4{\theta}}  } \)<br><br>
+           \( \displaystyle{ \implies \cos{4 \theta}+i \sin{4 \theta} = ({\cos^4{\theta}+ \sin^4{\theta}-6 \cos^2{ \theta} \sin^2{\theta}}) +i({4 \cos^3{\theta} \sin{\theta}-4 \cos{\theta \sin^3{\theta}}})} \)<br><br>
+           Comparing both sides, the real part gives <br><br>
+           \( \displaystyle{ \cos{4 \theta} =    {\cos^4{\theta}+ \sin^4{\theta}-6 \cos^2{ \theta} \sin^2{\theta}}      }    \)<br><br>
+           Since \(  \displaystyle{ \sin^2{\theta} = {1 - \cos^2{\theta}}    } \), we have<br><br>
+           \( \displaystyle{ \cos{4 \theta} = {\cos^4{\theta}+{(1 - \cos^2{\theta})(1 - \cos^2{\theta})} - 6 \cos^2{\theta}{(1 - \cos^2{\theta})}    }    } \)<br><br>
+           \( \displaystyle{\implies \cos^4{\theta} +{[1-2 \cos^2{\theta}+ \cos^4{\theta}]}- 6 \cos^{\theta}+6 \cos^4{\theta}     }\)<br><br>
+           \(  \displaystyle{ \implies \cos{4 \theta} =   {8 \cos^4{\theta}}- {8 \cos^2{\theta}} +1       } \)<br><br>
+           Also, The imaginary part gives <br><br>
+           \(  \displaystyle{\sin{4 \theta} =  {4 \cos^3{\theta} \sin{\theta}-4 \cos{\theta \sin^3{\theta}}} } \)<br><br>
+           \(  \displaystyle{ \implies {4 \cos{\theta} \sin{\theta}}{[{1- \sin^2{\theta}}]} -4 \cos{\theta} \sin^3{\theta}  }\)<br><br>
+           \( \displaystyle{\implies   4 \cos{\theta} \sin{\theta} -4 \cos{\theta} \sin^3{\theta} -4 \cos{\theta} \sin^3{\theta}        } \)<br><br>
+           \( \displaystyle{  \implies \sin{4 \theta} =   4 \cos{\theta} \sin{\theta} -8 \cos{\theta} \sin^3{\theta}    }\)<br><br>
+        </p>
+        <br>
+        <p>
+          (2) Express \( \cos{3 \theta} \) and  \( \sin{3 \theta}  \) in terms of powers of \( \cos{\theta} \)  and  \( \sin{\theta} \) respectively<br><br>
+          <u>Solution</u><br><br>
+          By De Moivre's theorem <br><br>
+          \( \displaystyle{ \cos{3 \theta}+i \sin{3 \theta} = {(\cos{\theta}+i \sin{\theta})^3}  } \)<br><br>
+          \( \displaystyle{ \implies {  \cos^3{\theta}+ 3 \cos^2{\theta}(i \sin{\theta}) +3 \cos{\theta}{(i \sin{\theta})^2} - i\sin^3{\theta}              }        }\)<br><br>
+          \(\displaystyle{\implies{   \cos^3{\theta}+ 3i \cos^2{\theta} \sin{\theta} -3 \cos{\theta}{ \sin^2{\theta}} -i \sin^3{\theta}    }      }\)<br><br>
+          \(\displaystyle{\implies{ \cos{3 \theta}+i \sin{3 \theta} =  ({\cos^3{\theta}-3 \cos{\theta}{ \sin^2{\theta}}})+ i{(3 \cos^2{\theta} \sin{\theta}  - \sin^3{\theta})}    }      }\)<br><br>
+          Comparing both sides, the real part gives <br><br>
+          \( \displaystyle{\cos{3 \theta} =   {\cos^3{\theta}-3 \cos{\theta}{ \sin^2{\theta}}}   }\)<br><br>
+          \( \displaystyle{ \implies  {\cos^3{\theta}-3 \cos{\theta}({1 - \cos^2{\theta}})}    } \)<br><br>
+          \( \displaystyle{ \implies  {\cos^3{\theta}-3 \cos{\theta} + 3 \cos^3{\theta}}    } \)<br><br>
+          \( \displaystyle{ \implies  {4 \cos^3{\theta}-3 \cos{\theta}  }   } \)<br><br>
+          Also, The imaginary part gives <br><br>
+          \( \displaystyle{\sin{3 \theta} =  3 \cos^2{\theta} \sin{\theta}  - \sin^3{\theta} }\)<br><br>
+          \( \displaystyle{ \implies  {3 \sin{\theta}({1 - \sin^2{\theta}})  - \sin^3{\theta}   }    } \)<br><br>
+          \( \displaystyle{ \implies  {3 \sin{\theta} -  3\sin^3{\theta}  - \sin^3{\theta}   }    } \)<br><br>
+          \( \displaystyle{ \implies  {3 \sin{\theta}  -4 \sin^3{\theta}    }    } \)<br><br>
+          \( \displaystyle{ \implies \sin{3 \theta} =  {3 \sin{\theta}  -4 \sin^3{\theta}    }    } \)<br><br>
+        </p>
+        <br>
+        <p>
+          <h4><u>The Cube Roots of Unity</u></h4><br><br>
+          Lets's start by solving the equation <br><br>
+          \( \displaystyle{ x^3-1 = 0} \)<br><br>
+          \( \displaystyle{\implies{(x-1)(x^2+x+1) = 0}   }\)<br><br>
+          \( \displaystyle{\implies{x=1}, x^2+x+1 = 0  }\) <br><br>
+          Now, we try to solve \( \displaystyle{x^2+x+1 = 0} \)<br><br>
+          Using the quadratic formula, we have <br><br>
+          \( \displaystyle{x = \frac{-1 \pm \sqrt{1-4}}{2}  }\)<br><br>
+          \( \displaystyle{ \implies  \frac{-1 \pm \sqrt{-3}}{2}  }\)<br><br>
+          \( \displaystyle{ \implies x = \frac{-1 \pm \sqrt{3}i}{2}  }\)<br><br>
+          \( \therefore \)we have \( \displaystyle{x=1, x = \frac{-1 + \sqrt{3}i}{2}, x = \frac{-1 - \sqrt{3}i}{2}      }\)<br><br>
+          So, the roots of the equation are  \( \displaystyle{1, \frac{-1 + \sqrt{3}i}{2}, \frac{-1 - \sqrt{3}i}{2}}\)<br><br>
+          Now, consider the square of the second root <br><br>
+          \( \displaystyle{ \left(\frac{-1 + \sqrt{3}i}{2}\right)^2 = {\frac{1}{4}-\frac{\sqrt{3}}{2}i-\frac{3}{4}}   }\)<br><br>
+          \( \displaystyle{\implies { - \frac{1}{2} - \frac{\sqrt{3}}{2}i = \frac{-1 - \sqrt{3}i}{2}} }\)<br><br>
+          We see that the result of the square of the second root equals the third root. <br><br>
+          In the same way, the square of the third root also equals  the second root. <br><br>
+          \( \displaystyle{ \left(\frac{-1 - \sqrt{3}i}{2}\right)^2 = {\frac{1}{4}+\frac{\sqrt{3}}{2}i-\frac{3}{4}} = \frac{-1 +  \sqrt{3}i}{2} }\)<br><br>
+          We can represent the the roots by <br><br>
+          \( \displaystyle{1, w, w^2}\)<br><br>
+          Now, if we add the three roots <br><br>
+          \( \displaystyle{1+w+w^2 = 1+[\frac{-1 + \sqrt{3}i}{2}]+[\frac{-1 - \sqrt{3}i}{2}] = 0}\)<br><br>
+          \( \displaystyle{\implies 1+w+w^2 = 0}\)<br><br>
+          If we multiply the three roots <br><br>
+          \( \displaystyle{{1 \cdot w \cdot w^2} = 1 \cdot [\frac{-1 + \sqrt{3}i}{2}] \cdot [\frac{-1 - \sqrt{3}i}{2}] = 1}\)<br><br>
+          \( \displaystyle{\implies 1 \cdot w \cdot w^2 = 1}\)<br><br>
+        </p>
+        <br>
+        <p>
+          <h4><u>Properties of Cube Roots of Unity</u></h4><br><br>
+          (1) Sum of all cube roots of unity is zero. <br>
+          (2) Product of all cube roots of unity is 1. <br>
+          (3) each complex cube root of unity is the square of the other. <br><br>
+          <b><u>Useful identities</u></b> <br><br>
+          (i)\( \displaystyle{1+w+w^2 = 0} \)<br><br>
+           \( \displaystyle{ \implies 1+w = -w^2} \)<br><br>
+           \( \displaystyle{ \implies 1+w^2 = -w} \)<br><br>
+           (ii) \( w^3 = 1\)<br><br>
+        </p>
+        <br>
+        <p>
+          <u>Examples</u><br><br>
+           If \( w \) is one of the complex roots of unity, show that <br><br>
+          (1) \( \displaystyle{{(1+w-w^2)^3}-{(1-w+w^2)^3} = 0} \)<br><br>
+          (2) \( \displaystyle{{(1-w+w^2)}{(1+w-w^2)} = 4} \)<br><br>
+          (3) \( \displaystyle{{(1+w)^6}=1} \)<br><br>
+          (4) \( \displaystyle{a^3+b^3 = {(a+b)(a+wb)(a+w^2b)}} \)<br><br>
+          (5) \( \displaystyle{(1+w^2)^{12} = 1}\)<br><br>
+          (6) \( \displaystyle{{(1-w)(1-w^2)(1-w^4)(1-w^5)(1-w^7)(1-w^8)} =27}\)<br><br>
+          <u>Solution</u><br><br>
+
+          recall that :  \( 1+w = -w^2 \) ,  \( 1+w^2=-w \) , and \( w^3 =1 \)<br><br>
+          So we have <br><br>
+          (1) \( \displaystyle{{(1+w-w^2)^3}-{(1-w+w^2)^3} } \)<br><br>
+          \( \displaystyle{{(1+w-w^2)^3}-{(1-w+w^2)^3}= {[(1+w)-w^2]^3}-{[(1+w^2)-w]^3}= {(-w^2-w^2)^3-(-w-w)^3}   } \)<br><br>
+          \( \displaystyle{\implies {(-2w^2)^3-(-2w)^3} = {-8w^6 +8w^3} = {-8 \cdot w^3 \cdot w^3 +8w^3}  } \)<br><br>
+          \( \displaystyle{\implies {-8 \cdot 1 \cdot 1 +8 \cdot 1 }= -8+8 = 0 } \)<br><br>
+          \( \displaystyle{ \implies {(1+w-w^2)^3}-{(1-w+w^2)^3} = 0} \)<br><br><br>
+          (2) \( \displaystyle{{(1-w+w^2)}{(1+w-w^2)} } \)<br><br>
+          \( \displaystyle{\implies {{[(1+w^2)-w]}{[(1+w)-w^2]}} = {(-w-w)(-w^2-w^2)} }\)<br><br>
+          \( \displaystyle{ ={(-2w)(-2w^2)} = 4w^3 = 4 \cdot 1 = 4 } \)<br><br>
+          \( \displaystyle{ \implies {(1-w+w^2)}{(1+w-w^2)} = 4} \)<br><br><br>
+          (3) \( \displaystyle{{(1+w)^6}= {(-w^2)^6} = w^12 } \)<br><br>
+          \( \displaystyle{\implies  {w^3 \cdot w^3 \cdot w^3 \cdot w^3}= 1 \cdot 1 \cdot 1 \cdot 1= 1 }\)<br><br>
+          \( \displaystyle{ \implies {(1+w)^6}=1} \)<br><br><br>
+          (4) \( \displaystyle{ {(a+b)(a+wb)(a+w^2b)}} \)<br><br>
+          \( \displaystyle{\implies{a^3+a^2bw+a^2b+ab^2w+a^2bw^3+ab^2w^2+b^3w^3}  } \)<br><br>
+          \( \displaystyle{\implies {a^3+a^bw+a^2b+ab^2w+a^2bw^2+ab^2+ab^2w^2+b^3}}\)<br><br>
+          \( \displaystyle{\implies {a^3+b^3+a^2b(1+w+w^2)+ab^2(1+w+w^2)}} \)<br><br>
+          \( \displaystyle{\implies {a^3+b^3+a^2b(0)+ab^2(0)} = {a^3+b^3}} \)<br><br>
+          \( \displaystyle{ \implies a^3+b^3 = {(a+b)(a+wb)(a+w^2b)}} \)<br><br><br>
+          (5) \( \displaystyle{(1+w^2)^{12} = {(-w)^{12}} }\)<br><br>
+          \( \displaystyle{ \implies{w^12 = {w^3 \cdot w^3 \cdot w^3 \cdot w^3 = 1\cdot 1\cdot 1\cdot 1 =1 }}}\)<br><br>
+          \( \displaystyle{ \implies (1+w^2)^{12} = 1}\)<br><br><br>
+          (6) \( \displaystyle{{(1-w)(1-w^2)(1-w^4)(1-w^5)(1-w^7)(1-w^8)}}\)<br><br>
+          \( \displaystyle{ \implies {(1-w)(1-w^2)(1-w^3 \cdot w)(1-w^3 \cdot w^2)(1-w^3 \cdot w^3 \cdot w)(1-w^3 \cdot w^3 \cdot w^2)}}\)<br><br>
+          \( \displaystyle{\implies {(1-w)(1-w^2)(1-w)(1-w^2)(1-w)(1-w^2)}}\)<br><br>
+          \( \displaystyle{\implies {(1-w)^3(1-w^2)^3} }\)<br><br>
+            \( \displaystyle{\implies {[(1-w)(1-w^2)]^3} }\)<br><br>
+            \( \displaystyle{\implies [{1-w^2-w+w^3}]^3 = [{1+w^3-w-w^2}]^3  } \)<br><br>
+            \( \displaystyle{\implies [{1+1-w+(1+w)}]^3 = [{1+1-w+w+1}]^3 }\)<br><br>
+            \( \displaystyle{\implies {(3)^3} = 27 }\)<br><br>
+            \( \displaystyle{\implies {(1-w)(1-w^2)(1-w^4)(1-w^5)(1-w^7)(1-w^8)} =27}\)<br><br>
+        </p>
+        <br>
+        <p>
+          <u>Examples</u><br><br>
+          Find the cube root of <br><br>
+          (i) \( - 27 \)<br><br>
+          (ii) \( 8 \)<br><br>
+          <u>Solution</u><br><br>
+          (i) Let \( x^3 = -27 \) , then<br><br>
+          \( \displaystyle{x^3+27 = 0}\)<br><br>
+          \( \displaystyle{\implies {(x+3)(x^2-3x+9) = 0}}\)<br><br>
+          \( \displaystyle{\implies {x+3=0 }}\) or \( \displaystyle{(x^2-3x+9) = 0}\)<br><br>
+          Now, we solve \( \displaystyle{(x^2-3x+9) = 0}\)<br><br>
+          Using the quadratic formula <br><br>
+          \( \displaystyle{x = \frac{3 \pm \sqrt{9-36}}{2} = \frac{3 \pm \sqrt{-27}}{2}}\)<br><br>
+          \( \displaystyle{\implies {\frac{3 \pm i \sqrt{27}}{2}} = {\frac{3 \pm 3i \sqrt{3}}{2}}}\)<br><br>
+          \( \displaystyle{\implies {3 \left[\frac{1 \pm i \sqrt{3}}{2}\right]} = {-3 \left[\frac{-1 \pm i\sqrt{3}}{2}\right]}} \)<br><br>
+          \( \displaystyle{\implies {x = {-3 \left[\frac{-1 + i\sqrt{3}}{2}\right]}, x={-3 \left[\frac{-1 - i\sqrt{3}}{2}\right]}}}\)<br><br>
+          \( \displaystyle{ \therefore -3, -3w, -3w^2 }\) are cube roots of \( -27 \)<br><br><br>
+          (ii) Let \( x^3 = 8 \) , then<br><br>
+          \( \displaystyle{x^3-8 = 0}\)<br><br>
+          \( \displaystyle{\implies {(x-2)(x^2+2x+4) = 0}}\)<br><br>
+          \( \displaystyle{\implies {x-2 =0 }}\) or \( \displaystyle{(x^2+2x+4) = 0}\)<br><br>
+          Now, we solve \( \displaystyle{(x^2+2x+4) = 0}\)<br><br>
+          Using the quadratic formula <br><br>
+          \( \displaystyle{x = \frac{-2 \pm \sqrt{4-16}}{2} = \frac{-2 \pm \sqrt{-12}}{2}}\)<br><br>
+          \( \displaystyle{\implies {\frac{-2 \pm i \sqrt{12}}{2}} = {\frac{-2 \pm 2i \sqrt{3}}{2}}}\)<br><br>
+          \( \displaystyle{\implies {2 \left[\frac{-1 \pm i \sqrt{3}}{2}\right]} = {2 \left[\frac{-1 \pm i\sqrt{3}}{2}\right]}} \)<br><br>
+          \( \displaystyle{\implies {x = {2 \left[\frac{-1 + i\sqrt{3}}{2}\right]}, x={2 \left[\frac{-1 - i\sqrt{3}}{2}\right]}}}\)<br><br>
+          \( \displaystyle{ \therefore 2, 2w, 2w^2 }\) are cube roots of \( 8 \)<br><br><br>
+        </p>
+        <br>
+        <p>
+          <b><u>Exercises</u></b><br><br>
+          (1) Express in the form \( a + ib \) <br>
+          (a) \( \displaystyle{\frac{3-i}{2+i}} \)<br><br>
+          (b) \( \displaystyle{\frac{4+3i}{2-i}} \)<br><br>
+          (c) \( \displaystyle{\left(\frac{1+i}{1-i}\right)^2} \)<br><br>
+          <br>
+          (2) If  \( \displaystyle{(x+iy)^2= a+ib} \), show that<br>
+           \( \displaystyle{x^2-y^2=a, 2xy=b} \). Hence,evaluate <br>
+           \( \displaystyle{\sqrt{(8+6i)}} \)<br><br>
+           <br>
+           (3) Find the solutions of the equation  \( \displaystyle{x^2+7x+20=0} \) in the form \( a+ib \).<br>
+           Find the some and productof the roots <br><br>
+           <br>
+           (4) Find two real numbers \( x \) and \( y\) so that <br>
+            \( \displaystyle{x(3+4i)-y(1+2i)+5 = 0} \)<br><br>
+            <br>
+            (5)Solve the equation  \( \displaystyle{\left(\frac{z+1}{z-1}\right)^2 = i} \)<br><br>
+            <br>
+            (6) Express \( \cos{5\theta} \) and \( \sin{5 \theta} \) in terms of powers of \( \cos{\theta} \) and \( \sin{\theta}\) respectively.<br><br>
+            <br><br>
+        </p>
+     </div>
+
+  </body>
+</html>

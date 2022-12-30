@@ -1,0 +1,26 @@
+body{
+  font-style: normal;
+  font-family: sans-serif;
+  background-color: gray;
+}
+/*.center-box{
+  width: 700px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 10px;
+  display: block;
+  justify-content: center;
+}*/
+.center{
+  background-color: white;
+  box-sizing: content-box;
+  width: 700px;
+  padding: 10px;
+  border: 5px solid blue;
+  margin: auto;
+  height: 600px;
+  inline-size: min-content;
+  display: block;
+  justify-content: center;
+  overflow-y: scroll;
+}
